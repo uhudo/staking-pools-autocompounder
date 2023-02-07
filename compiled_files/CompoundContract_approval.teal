@@ -1,0 +1,1202 @@
+#pragma version 8
+txn NumAppArgs
+int 0
+==
+bnz main_l18
+txna ApplicationArgs 0
+method "create_app(uint64,uint64,uint64)void"
+==
+bnz main_l17
+txna ApplicationArgs 0
+method "on_setup()void"
+==
+bnz main_l16
+txna ApplicationArgs 0
+method "trigger_compound()void"
+==
+bnz main_l15
+txna ApplicationArgs 0
+method "stake()void"
+==
+bnz main_l14
+txna ApplicationArgs 0
+method "compound_now()void"
+==
+bnz main_l13
+txna ApplicationArgs 0
+method "withdraw(uint64)uint64"
+==
+bnz main_l12
+txna ApplicationArgs 0
+method "local_claim(uint64)void"
+==
+bnz main_l11
+txna ApplicationArgs 0
+method "delete_boxes(uint64)void"
+==
+bnz main_l10
+err
+main_l10:
+txn OnCompletion
+int NoOp
+==
+txn ApplicationID
+int 0
+!=
+&&
+assert
+txna ApplicationArgs 1
+btoi
+store 12
+load 12
+callsub deleteboxes_15
+int 1
+return
+main_l11:
+txn OnCompletion
+int NoOp
+==
+txn ApplicationID
+int 0
+!=
+&&
+assert
+txna ApplicationArgs 1
+btoi
+store 11
+load 11
+callsub localclaim_14
+int 1
+return
+main_l12:
+txn OnCompletion
+int NoOp
+==
+txn ApplicationID
+int 0
+!=
+&&
+assert
+txna ApplicationArgs 1
+btoi
+store 5
+load 5
+callsub withdraw_13
+store 6
+byte 0x151f7c75
+load 6
+itob
+concat
+log
+int 1
+return
+main_l13:
+txn OnCompletion
+int NoOp
+==
+txn ApplicationID
+int 0
+!=
+&&
+assert
+callsub compoundnow_12
+int 1
+return
+main_l14:
+txn OnCompletion
+int NoOp
+==
+txn ApplicationID
+int 0
+!=
+&&
+assert
+callsub stake_11
+int 1
+return
+main_l15:
+txn OnCompletion
+int NoOp
+==
+txn ApplicationID
+int 0
+!=
+&&
+assert
+callsub triggercompound_10
+int 1
+return
+main_l16:
+txn OnCompletion
+int NoOp
+==
+txn ApplicationID
+int 0
+!=
+&&
+assert
+callsub onsetup_9
+int 1
+return
+main_l17:
+txn OnCompletion
+int NoOp
+==
+txn ApplicationID
+int 0
+==
+&&
+assert
+txna ApplicationArgs 1
+btoi
+store 2
+txna ApplicationArgs 2
+btoi
+store 3
+txna ApplicationArgs 3
+btoi
+store 4
+load 2
+load 3
+load 4
+callsub createapp_8
+int 1
+return
+main_l18:
+txn OnCompletion
+int OptIn
+==
+bnz main_l28
+txn OnCompletion
+int CloseOut
+==
+bnz main_l27
+txn OnCompletion
+int UpdateApplication
+==
+bnz main_l26
+txn OnCompletion
+int DeleteApplication
+==
+bnz main_l23
+err
+main_l23:
+txn ApplicationID
+int 0
+!=
+assert
+txn Sender
+global CreatorAddress
+==
+assert
+byte "NS"
+app_global_get
+int 0
+==
+global Round
+byte "PER"
+app_global_get
+>
+&&
+global Round
+byte "PER"
+app_global_get
+byte "CP"
+app_global_get
++
+>
+||
+assert
+byte "NB"
+app_global_get
+int 0
+==
+assert
+byte "LCD"
+app_global_get
+int 0
+==
+bnz main_l25
+main_l24:
+callsub closeAssetToCreator_2
+itxn_begin
+int appl
+itxn_field TypeEnum
+int ClearState
+itxn_field OnCompletion
+byte "SC_ID"
+app_global_get
+itxn_field ApplicationID
+int 0
+itxn_field Fee
+itxn_submit
+global CreatorAddress
+callsub closeAccountTo_1
+int 1
+return
+main_l25:
+byte "SC_ID"
+app_global_get
+app_params_get AppAddress
+store 1
+store 0
+load 1
+assert
+itxn_begin
+int appl
+itxn_field TypeEnum
+byte "SC_ID"
+app_global_get
+itxn_field ApplicationID
+byte "AC_ID"
+app_global_get
+itxn_field Applications
+byte "S_ASA_ID"
+app_global_get
+itxn_field Assets
+load 0
+itxn_field Accounts
+int NoOp
+itxn_field OnCompletion
+byte base64(AA==)
+itxn_field ApplicationArgs
+byte base64(Aw==)
+itxn_field ApplicationArgs
+byte base64(AAAAAAAAAAA=)
+itxn_field ApplicationArgs
+byte base64(AAAAAAAAAAAA)
+itxn_field ApplicationArgs
+int 0
+itxn_field Fee
+itxn_submit
+byte "TS"
+app_global_get
+int 0
+callsub unstakefromSC_5
+b main_l24
+main_l26:
+int 0
+return
+main_l27:
+txn ApplicationID
+int 0
+!=
+assert
+callsub floorlocalstake_0
+int 0
+==
+assert
+byte "NS"
+byte "NS"
+app_global_get
+int 1
+-
+app_global_put
+int 1
+return
+main_l28:
+txn ApplicationID
+int 0
+!=
+assert
+byte "PER"
+app_global_get
+global Round
+>
+assert
+byte "LCR"
+app_global_get
+int 0
+>
+assert
+txn Sender
+byte "LNB"
+byte "NB"
+app_global_get
+app_local_put
+txn Sender
+byte "LS"
+int 16
+bzero
+app_local_put
+byte "NS"
+byte "NS"
+app_global_get
+int 1
++
+app_global_put
+int 1
+return
+
+// floor_local_stake
+floorlocalstake_0:
+txn Sender
+byte "LS"
+app_local_get
+store 13
+load 13
+len
+int 8
+>
+bnz floorlocalstake_0_l2
+int 0
+b floorlocalstake_0_l3
+floorlocalstake_0_l2:
+load 13
+int 0
+load 13
+len
+int 8
+-
+extract3
+btoi
+floorlocalstake_0_l3:
+retsub
+
+// closeAccountTo
+closeAccountTo_1:
+store 14
+global CurrentApplicationAddress
+balance
+int 0
+!=
+bz closeAccountTo_1_l2
+itxn_begin
+int 0
+itxn_field Fee
+int pay
+itxn_field TypeEnum
+load 14
+itxn_field CloseRemainderTo
+itxn_submit
+closeAccountTo_1_l2:
+retsub
+
+// closeAssetToCreator
+closeAssetToCreator_2:
+itxn_begin
+int axfer
+itxn_field TypeEnum
+byte "S_ASA_ID"
+app_global_get
+itxn_field XferAsset
+global CreatorAddress
+itxn_field AssetCloseTo
+int 0
+itxn_field Fee
+itxn_submit
+retsub
+
+// stake_to_SC
+staketoSC_3:
+store 27
+store 26
+byte "SC_ID"
+app_global_get
+app_params_get AppAddress
+store 1
+store 0
+load 1
+assert
+itxn_begin
+int axfer
+itxn_field TypeEnum
+byte "S_ASA_ID"
+app_global_get
+itxn_field XferAsset
+load 0
+itxn_field AssetReceiver
+load 26
+itxn_field AssetAmount
+int 0
+itxn_field Fee
+itxn_next
+int appl
+itxn_field TypeEnum
+byte "SC_ID"
+app_global_get
+itxn_field ApplicationID
+byte "AC_ID"
+app_global_get
+itxn_field Applications
+byte "S_ASA_ID"
+app_global_get
+itxn_field Assets
+load 0
+itxn_field Accounts
+int NoOp
+itxn_field OnCompletion
+byte base64(AA==)
+itxn_field ApplicationArgs
+byte base64(Aw==)
+itxn_field ApplicationArgs
+byte base64(AAAAAAAAAAA=)
+itxn_field ApplicationArgs
+byte 0x02
+load 26
+itob
+concat
+itxn_field ApplicationArgs
+load 27
+int 1
+==
+bnz staketoSC_3_l2
+int 0
+b staketoSC_3_l3
+staketoSC_3_l2:
+int 3000
+staketoSC_3_l3:
+itxn_field Fee
+itxn_submit
+retsub
+
+// claim_stake_record
+claimstakerecord_4:
+store 23
+store 22
+byte "TS"
+app_global_get
+int 0
+>
+assert
+byte "SC_ID"
+app_global_get
+app_params_get AppAddress
+store 1
+store 0
+load 1
+assert
+itxn_begin
+int appl
+itxn_field TypeEnum
+byte "SC_ID"
+app_global_get
+itxn_field ApplicationID
+byte "AC_ID"
+app_global_get
+itxn_field Applications
+byte "S_ASA_ID"
+app_global_get
+itxn_field Assets
+load 0
+itxn_field Accounts
+int NoOp
+itxn_field OnCompletion
+byte base64(AA==)
+itxn_field ApplicationArgs
+byte base64(Aw==)
+itxn_field ApplicationArgs
+byte base64(AAAAAAAAAAA=)
+itxn_field ApplicationArgs
+byte base64(AAAAAAAAAAAA)
+itxn_field ApplicationArgs
+load 23
+int 1
+==
+bnz claimstakerecord_4_l4
+int 0
+claimstakerecord_4_l2:
+itxn_field Fee
+itxn_submit
+itxn LastLog
+extract 16 8
+btoi
+store 24
+byte "NB"
+byte "NB"
+app_global_get
+int 1
++
+app_global_put
+byte "NB"
+app_global_get
+itob
+int 1
+itob
+int 8
+bzero
+concat
+load 24
+itob
+int 8
+bzero
+concat
+int 8
+bzero
+byte "TS"
+app_global_get
+itob
+concat
+b/
+b+
+box_put
+load 24
+load 22
++
+store 25
+load 25
+int 0
+>
+bz claimstakerecord_4_l5
+load 25
+load 23
+callsub staketoSC_3
+byte "TS"
+byte "TS"
+app_global_get
+load 25
++
+app_global_put
+b claimstakerecord_4_l5
+claimstakerecord_4_l4:
+int 4000
+b claimstakerecord_4_l2
+claimstakerecord_4_l5:
+byte "LCR"
+global Round
+app_global_put
+retsub
+
+// unstake_from_SC
+unstakefromSC_5:
+store 16
+store 15
+byte "SC_ID"
+app_global_get
+app_params_get AppAddress
+store 1
+store 0
+load 1
+assert
+itxn_begin
+int appl
+itxn_field TypeEnum
+byte "SC_ID"
+app_global_get
+itxn_field ApplicationID
+byte "AC_ID"
+app_global_get
+itxn_field Applications
+byte "S_ASA_ID"
+app_global_get
+itxn_field Assets
+load 0
+itxn_field Accounts
+int NoOp
+itxn_field OnCompletion
+byte base64(AA==)
+itxn_field ApplicationArgs
+byte base64(Aw==)
+itxn_field ApplicationArgs
+byte base64(AAAAAAAAAAA=)
+itxn_field ApplicationArgs
+byte 0x03
+load 15
+itob
+concat
+itxn_field ApplicationArgs
+load 16
+int 1
+==
+bnz unstakefromSC_5_l2
+int 0
+b unstakefromSC_5_l3
+unstakefromSC_5_l2:
+int 3000
+unstakefromSC_5_l3:
+itxn_field Fee
+itxn_submit
+retsub
+
+// sendAssetToSender
+sendAssetToSender_6:
+store 31
+itxn_begin
+int axfer
+itxn_field TypeEnum
+byte "S_ASA_ID"
+app_global_get
+itxn_field XferAsset
+load 31
+itxn_field AssetAmount
+txn Sender
+itxn_field AssetReceiver
+int 0
+itxn_field Fee
+itxn_submit
+retsub
+
+// local_claim_box
+localclaimbox_7:
+store 28
+load 28
+itob
+box_get
+store 30
+store 29
+load 30
+assert
+load 28
+txn Sender
+byte "LNB"
+app_local_get
+int 1
++
+==
+assert
+txn Sender
+byte "LS"
+txn Sender
+byte "LS"
+app_local_get
+load 29
+b*
+int 1
+itob
+int 8
+bzero
+concat
+b/
+app_local_put
+txn Sender
+byte "LNB"
+load 28
+app_local_put
+retsub
+
+// create_app
+createapp_8:
+store 19
+store 18
+store 17
+byte "SC_ID"
+load 17
+app_global_put
+byte "AC_ID"
+load 18
+app_global_put
+byte "CP"
+load 19
+app_global_put
+byte "SC_ID"
+app_global_get
+byte base64(AA==)
+app_global_get_ex
+store 21
+store 20
+load 21
+assert
+byte "PSR"
+load 20
+extract 56 8
+btoi
+app_global_put
+byte "PER"
+load 20
+extract 64 8
+btoi
+app_global_put
+byte "S_ASA_ID"
+load 20
+extract 48 8
+btoi
+app_global_put
+byte "TS"
+int 0
+app_global_put
+byte "LCD"
+int 0
+app_global_put
+byte "LCR"
+int 0
+app_global_put
+byte "NS"
+int 0
+app_global_put
+byte "NB"
+int 0
+app_global_put
+int 1
+return
+
+// on_setup
+onsetup_9:
+txn Sender
+global CreatorAddress
+==
+assert
+byte "LCR"
+app_global_get
+int 0
+==
+assert
+byte "LCR"
+byte "PSR"
+app_global_get
+app_global_put
+itxn_begin
+int axfer
+itxn_field TypeEnum
+byte "S_ASA_ID"
+app_global_get
+itxn_field XferAsset
+global CurrentApplicationAddress
+itxn_field AssetReceiver
+int 0
+itxn_field Fee
+itxn_submit
+itxn_begin
+int appl
+itxn_field TypeEnum
+int OptIn
+itxn_field OnCompletion
+byte "SC_ID"
+app_global_get
+itxn_field ApplicationID
+int 0
+itxn_field Fee
+itxn_submit
+int 1
+return
+
+// trigger_compound
+triggercompound_10:
+byte "PER"
+app_global_get
+byte "LCR"
+app_global_get
+-
+global CurrentApplicationAddress
+balance
+global CurrentApplicationAddress
+min_balance
+-
+int 19100
+/
+/
+byte "LCR"
+app_global_get
++
+global Round
+<=
+// Trigger compounding
+assert
+global Round
+byte "PSR"
+app_global_get
+>
+// Trigger compounding - pool live
+assert
+int 0
+int 1
+callsub claimstakerecord_4
+int 1
+return
+
+// stake
+stake_11:
+global Round
+byte "PER"
+app_global_get
+<
+assert
+txn Sender
+byte "LNB"
+app_local_get
+byte "NB"
+app_global_get
+==
+bnz stake_11_l7
+txn Sender
+byte "LS"
+app_local_get
+int 16
+bzero
+b==
+bnz stake_11_l6
+int 0
+return
+stake_11_l3:
+txn GroupIndex
+int 2
+-
+gtxns TypeEnum
+int pay
+==
+assert
+txn GroupIndex
+int 2
+-
+gtxns Receiver
+global CurrentApplicationAddress
+==
+assert
+txn GroupIndex
+int 1
+-
+gtxns TypeEnum
+int axfer
+==
+assert
+txn GroupIndex
+int 1
+-
+gtxns AssetReceiver
+global CurrentApplicationAddress
+==
+assert
+txn GroupIndex
+int 1
+-
+gtxns XferAsset
+byte "S_ASA_ID"
+app_global_get
+==
+assert
+global Round
+byte "PSR"
+app_global_get
+>
+byte "TS"
+app_global_get
+int 0
+>
+&&
+bnz stake_11_l5
+txn GroupIndex
+int 2
+-
+gtxns Amount
+int 22100
+>=
+assert
+txn GroupIndex
+int 1
+-
+gtxns AssetAmount
+int 1
+callsub staketoSC_3
+byte "TS"
+byte "TS"
+app_global_get
+txn GroupIndex
+int 1
+-
+gtxns AssetAmount
++
+app_global_put
+b stake_11_l8
+stake_11_l5:
+txn GroupIndex
+int 2
+-
+gtxns Amount
+int 38200
+>=
+// staking while pool live, stake already deposited
+assert
+txn GroupIndex
+int 1
+-
+gtxns AssetAmount
+int 1
+callsub claimstakerecord_4
+byte "NB"
+app_global_get
+callsub localclaimbox_7
+b stake_11_l8
+stake_11_l6:
+txn Sender
+byte "LNB"
+byte "NB"
+app_global_get
+app_local_put
+int 1
+// user can stake since it has zero stake
+assert
+b stake_11_l3
+stake_11_l7:
+int 1
+// boxes up-to-date, user can stake
+assert
+b stake_11_l3
+stake_11_l8:
+txn Sender
+byte "LS"
+txn Sender
+byte "LS"
+app_local_get
+txn GroupIndex
+int 1
+-
+gtxns AssetAmount
+itob
+int 8
+bzero
+concat
+b+
+app_local_put
+int 1
+return
+
+// compound_now
+compoundnow_12:
+global Round
+byte "PER"
+app_global_get
+<
+assert
+global Round
+byte "PSR"
+app_global_get
+>
+assert
+txn GroupIndex
+int 1
+-
+gtxns TypeEnum
+int pay
+==
+assert
+txn GroupIndex
+int 1
+-
+gtxns Receiver
+global CurrentApplicationAddress
+==
+assert
+txn GroupIndex
+int 1
+-
+gtxns Amount
+int 19100
+>=
+assert
+int 0
+int 1
+callsub claimstakerecord_4
+int 1
+return
+
+// withdraw
+withdraw_13:
+store 7
+txn Sender
+byte "LNB"
+app_local_get
+byte "NB"
+app_global_get
+==
+assert
+txn GroupIndex
+int 1
+-
+gtxns TypeEnum
+int pay
+==
+assert
+txn GroupIndex
+int 1
+-
+gtxns Receiver
+global CurrentApplicationAddress
+==
+assert
+callsub floorlocalstake_0
+store 9
+load 7
+load 9
+<=
+assert
+global Round
+byte "PSR"
+app_global_get
+<
+bnz withdraw_13_l12
+global Round
+byte "PER"
+app_global_get
+<=
+bnz withdraw_13_l8
+byte "LCD"
+app_global_get
+int 0
+==
+bnz withdraw_13_l4
+load 7
+store 10
+b withdraw_13_l13
+withdraw_13_l4:
+int 0
+int 1
+callsub claimstakerecord_4
+byte "NB"
+app_global_get
+callsub localclaimbox_7
+load 7
+load 9
+==
+bnz withdraw_13_l7
+load 7
+store 10
+withdraw_13_l6:
+byte "TS"
+app_global_get
+int 1
+callsub unstakefromSC_5
+txn GroupIndex
+int 1
+-
+gtxns Amount
+int 22100
+>=
+assert
+byte "LCD"
+int 1
+app_global_put
+b withdraw_13_l13
+withdraw_13_l7:
+callsub floorlocalstake_0
+store 10
+b withdraw_13_l6
+withdraw_13_l8:
+int 0
+int 1
+callsub claimstakerecord_4
+byte "NB"
+app_global_get
+callsub localclaimbox_7
+load 7
+load 9
+==
+bnz withdraw_13_l11
+load 7
+store 10
+withdraw_13_l10:
+load 10
+int 1
+callsub unstakefromSC_5
+txn GroupIndex
+int 1
+-
+gtxns Amount
+int 22100
+>=
+assert
+b withdraw_13_l13
+withdraw_13_l11:
+callsub floorlocalstake_0
+store 10
+b withdraw_13_l10
+withdraw_13_l12:
+load 7
+int 1
+callsub unstakefromSC_5
+load 7
+store 10
+txn GroupIndex
+int 1
+-
+gtxns Amount
+int 3000
+>=
+assert
+withdraw_13_l13:
+load 10
+callsub sendAssetToSender_6
+byte "TS"
+byte "TS"
+app_global_get
+load 10
+-
+app_global_put
+txn Sender
+byte "LS"
+txn Sender
+byte "LS"
+app_local_get
+load 10
+itob
+int 8
+bzero
+concat
+b-
+app_local_put
+load 10
+store 8
+load 8
+retsub
+
+// local_claim
+localclaim_14:
+store 32
+txn Sender
+byte "LNB"
+app_local_get
+int 1
++
+store 33
+localclaim_14_l1:
+load 33
+load 32
+<=
+bz localclaim_14_l3
+load 33
+callsub localclaimbox_7
+load 33
+int 1
++
+store 33
+b localclaim_14_l1
+localclaim_14_l3:
+int 1
+return
+
+// delete_boxes
+deleteboxes_15:
+store 34
+txn Sender
+global CreatorAddress
+==
+assert
+byte "NS"
+app_global_get
+int 0
+==
+global Round
+byte "PER"
+app_global_get
+>
+&&
+global Round
+byte "PER"
+app_global_get
+byte "CP"
+app_global_get
++
+>
+||
+assert
+byte "NB"
+app_global_get
+store 35
+deleteboxes_15_l1:
+load 35
+load 34
+>
+bz deleteboxes_15_l3
+load 35
+itob
+box_del
+assert
+load 35
+int 1
+-
+store 35
+b deleteboxes_15_l1
+deleteboxes_15_l3:
+byte "NB"
+load 35
+app_global_put
+int 1
+return

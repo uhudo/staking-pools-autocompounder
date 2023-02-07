@@ -1,0 +1,1724 @@
+----------------------------------------------------------------------------------------
+Welcome to interface for interacting with autocompounding contracts!
+First please input address to algod node to connect to: http://localhost:4001
+Enter algod token: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+----------------------------------------------------------------------------------------
+Please enter path to .txt file with your wallet's mnemonic. (THIS IS FOR TEST PURPOSES ONLY!): a.txt
+Welcome user: P4B2...WA3M
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 2
+
+----------------------------------------------------------------------------------------
+Please choose what is the type of the compounding contract you want to create:
+	0) Compounding for staking pool
+	1) Compounding for farming pool
+Please enter number of the option you would like to choose: 1
+Please enter the following parameters of the compounding contract you want to create:
+App ID of Cometa staking contract to compound: 157582406
+App ID of Cometa staking contract's associated contract: 157582429
+App ID of AMM contract: 148607000
+Pool address belonging to AMM contract and staking asset: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+Minimum amount of rewards received before they are added to the farming pool [base unit]: 10_000
+Claim period - number of rounds after pool ends that claiming can be done: 100
+
+	Tx ID: UU7PX5MDUPU46NO7ALDPCVNYF4KR37BASXFPOEOBVUSZNNPEKELA
+
+Created compound contract with app ID: 157582655
+For asset with ID: 148620458
+
+----------------------------------------------------------------------------------------
+You are managing contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 0 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 0 [round]
+	Number of stakers: 0
+	Number of boxes: 0
+
+Your options are:
+	1) Setup contract
+	2) Delete contract
+	3) Delete contract boxes
+	4) Interact as user
+	5) Read all compounding increments
+	6) Go to the top menu
+Please enter number of the option you would like to choose: 1
+
+----------------------------------------------------------------------------------------
+	Tx ID: 53NM5EAM6RXJTBQRAOYNGJDKXU3AFVPIW2MGBE3OPL4BHA6RPH2A
+	Tx ID: 345GLH2C7HSDWUWOD5HURKWHSGG747ROROTS55MG74JHVGSH4GRA
+
+Successfully setup contract with app ID: 157582655
+
+----------------------------------------------------------------------------------------
+You are managing contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 0 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563744 [round]
+	Number of stakers: 0
+	Number of boxes: 0
+
+Your options are:
+	1) Setup contract
+	2) Delete contract
+	3) Delete contract boxes
+	4) Interact as user
+	5) Read all compounding increments
+	6) Go to the top menu
+Please enter number of the option you would like to choose: 4
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 0 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563744 [round]
+	Number of stakers: 0
+	Number of boxes: 0
+
+	If you are a new user, please opt in!
+
+You are holding 1905593 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	0) Opt-in to contract
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 0
+
+----------------------------------------------------------------------------------------
+	Tx ID: MDERCYX66NGGL3A2CVXPGDTV2KNXCRXTX4CG5UULTQPNAUO3NP7A
+
+Successfully opted into app ID: 157582655
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 0 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563744 [round]
+	Number of stakers: 1
+	Number of boxes: 0
+
+
+You have 0 [base unit] of ASA ID '148620458' in the contract
+
+You are holding 1905593 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 1
+
+----------------------------------------------------------------------------------------
+Please enter the amount [base unit] you would like to deposit to the compound contract: 500_000
+	Tx ID: O223PIFCTLM6YPYBRUMGP2Q7DC2LPDZVB7QXCE43IZ5GVHHCQKNA
+	Tx ID: TK4N7OULAIVJLD356SURDQKZCOG6FYUBTNFNS4GJHOXRBXJ42DOQ
+	Tx ID: 7H25UE5DAZMRLTI6Z4X6VFMPMXDDJEXLMNJPTBSBOYIVGHHLLKNQ
+
+Successfully staked 500000 to app ID: 157582655
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 500000 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563744 [round]
+	Number of stakers: 1
+	Number of boxes: 0
+
+
+You have 500000 [base unit] of ASA ID '148620458' in the contract
+
+You are holding 1405593 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 10
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 1
+
+----------------------------------------------------------------------------------------
+Please enter path to .txt file with your wallet's mnemonic. (THIS IS FOR TEST PURPOSES ONLY!): b.txt
+Welcome user: TF2R...HORE
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 3
+
+----------------------------------------------------------------------------------------
+Please enter the app ID of the compound contract you are trying to connect to: 157582655
+Welcome TF2R...HORE!
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 500000 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563744 [round]
+	Number of stakers: 1
+	Number of boxes: 0
+
+	Error: account application info not found
+	If you are a new user, please opt in!
+
+You are holding 536342 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	0) Opt-in to contract
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 0
+
+----------------------------------------------------------------------------------------
+	Tx ID: IOCVS2GVDQE7QZURGDQC46P2HPKHAP645MJFI34DY2LIUFVULZUA
+
+Successfully opted into app ID: 157582655
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 500000 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563744 [round]
+	Number of stakers: 2
+	Number of boxes: 0
+
+
+You have 0 [base unit] of ASA ID '148620458' in the contract
+
+You are holding 536342 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 1
+
+----------------------------------------------------------------------------------------
+Please enter the amount [base unit] you would like to deposit to the compound contract: 200_000
+	Tx ID: P53NWGWTOOTEOB4X5OQGEU4GEJTZ64HQEKLNX5422U3LOLQPYBVQ
+	Tx ID: EGD2WVI6GYCFQSYR5SOQT4SVBKXQ7I7JYLYAWXSKZM4C34FGLX7A
+	Tx ID: 72CRQ4ZWHVNV3DFPEGWJDUGZFJ7RARFX7QXBJJQYB2YYGL3U6F3Q
+
+Successfully staked 200000 to app ID: 157582655
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 700000 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563744 [round]
+	Number of stakers: 2
+	Number of boxes: 0
+
+	Next scheduled compounding can be trigger at round: 27563977
+
+
+You have 200000 [base unit] of ASA ID '148620458' in the contract
+
+You are holding 336342 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 2
+
+----------------------------------------------------------------------------------------
+Please enter the amount [base unit] you would like to withdraw from the compound contract: 100_000
+	Tx ID: RQYUMTDIAAARNWYB7HFJOGCCG625UCVXERPXQJ4RPMTJR5SIV6FA
+	Tx ID: ZTVZQ3ZG6DBDS6OWELZ6LK2DVARXAXRBFRUPQYJJMDBXHDZBDPAQ
+	Return value: 100000
+
+Successfully withdrawn 100000
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 600000 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563744 [round]
+	Number of stakers: 2
+	Number of boxes: 0
+
+	Next scheduled compounding can be trigger at round: 27563977
+
+
+You have 100000 [base unit] of ASA ID '148620458' in the contract
+
+You are holding 436342 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 10
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 1
+
+----------------------------------------------------------------------------------------
+Please enter path to .txt file with your wallet's mnemonic. (THIS IS FOR TEST PURPOSES ONLY!): c.txt
+Welcome user: V4UX...VO5E
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 3
+
+----------------------------------------------------------------------------------------
+Please enter the app ID of the compound contract you are trying to connect to: 157582655
+Welcome V4UX...VO5E!
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 600000 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563744 [round]
+	Number of stakers: 2
+	Number of boxes: 0
+
+	Next scheduled compounding can be trigger at round: 27563977
+
+	Error: account application info not found
+	If you are a new user, please opt in!
+
+You are holding 5361908 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	0) Opt-in to contract
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 0
+
+----------------------------------------------------------------------------------------
+	Tx ID: RROQJRH7CAISG7MUXCV7HNO44FS5W33PIFB3FI2H55YPYDXIDKEA
+
+Successfully opted into app ID: 157582655
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 600000 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563744 [round]
+	Number of stakers: 3
+	Number of boxes: 0
+
+	Next scheduled compounding can be trigger at round: 27563977
+
+
+You have 0 [base unit] of ASA ID '148620458' in the contract
+
+You are holding 5361908 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 1
+
+----------------------------------------------------------------------------------------
+Please enter the amount [base unit] you would like to deposit to the compound contract: 100_000
+	Tx ID: FPGBCPTQWDXU6GOBBGPJCQCUS6OSMOYHS6CSYBWWBYEDCJ2KQJTQ
+	Tx ID: QFCERJIJ4OBWP75NGMKU2W5GIXUHGRSGU7HHW7CWWDAVNUWWPSBQ
+	Tx ID: SYJT2J3GHFSU336EUTA24SLKGADWS77U2YLQ43NHGMR55BQFLJPA
+
+Successfully staked 100000 to app ID: 157582655
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 702449 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563754 [round]
+	Number of stakers: 3
+	Number of boxes: 1
+
+	Next scheduled compounding can be trigger at round: 27563906
+
+
+You have 100000 [base unit] of ASA ID '148620458' in the contract
+
+You are holding 5261908 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 1
+
+----------------------------------------------------------------------------------------
+Please enter the amount [base unit] you would like to deposit to the compound contract: 15_000
+	Claiming rewards before additional stake can be deposited ...
+	Finished claiming rewards.
+	Depositing additional stake...
+	Tx ID: MY3LPL7QBM4GSJRTQEOPAYXJV5UJSVNEZ4WX3UJGH3AORZWKWF3A
+	Tx ID: FCQN6XGXDKR5KJCOEU6FBJBONW7ZT2ZGWV2EPVNNSYXW5I3GBZTA
+	Tx ID: IQHIGH7JCHP4F3YZJQCNKGYRKBCV7YJ5HNAMTRLYVVMMEH3THMTQ
+
+Successfully staked 15000 to app ID: 157582655
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 722101 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563773 [round]
+	Number of stakers: 3
+	Number of boxes: 2
+
+	Next scheduled compounding can be trigger at round: 27563882
+
+
+You have 115662 [base unit] of ASA ID '148620458' in the contract
+
+You are holding 5246908 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 10
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 1
+
+----------------------------------------------------------------------------------------
+Please enter path to .txt file with your wallet's mnemonic. (THIS IS FOR TEST PURPOSES ONLY!): b.txt
+Welcome user: TF2R...HORE
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 3
+
+----------------------------------------------------------------------------------------
+Please enter the app ID of the compound contract you are trying to connect to: 157582655
+Welcome TF2R...HORE!
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 722101 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563773 [round]
+	Number of stakers: 3
+	Number of boxes: 2
+
+	Next scheduled compounding can be trigger at round: 27563882
+
+
+You have 101073 [base unit] of ASA ID '148620458' in the contract
+	**For advance users:** You have 2 results to claim
+
+You are holding 436342 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 2
+
+----------------------------------------------------------------------------------------
+Please enter the amount [base unit] you would like to withdraw from the compound contract: 1073
+	Claiming rewards before withdrawing can be done ...
+	Tx ID: F2OAZKZRY6QQFO6MK6BW6WIYQFGM7L4XTMP7LILNJHLXQDREWUIQ
+	Finished claiming rewards.
+	Withdrawing requested amount...
+	Tx ID: 7AUQ4M5AK6GVFIQ7HN6SL5QSCWLPYHQVSJHOFILZCELSM3XK5FJA
+	Tx ID: NS4Y5J22U7FYD67M4NELUC6A5QQNN5K5AO4NKW2W5QUPOJEA7OEA
+	Return value: 1073
+
+Successfully withdrawn 1073
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 727153 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563798 [round]
+	Number of stakers: 3
+	Number of boxes: 3
+
+	Next scheduled compounding can be trigger at round: 27563901
+
+
+You have 100857 [base unit] of ASA ID '148620458' in the contract
+
+You are holding 437415 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 10
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 1
+
+----------------------------------------------------------------------------------------
+Please enter path to .txt file with your wallet's mnemonic. (THIS IS FOR TEST PURPOSES ONLY!): d.txt
+Welcome user: LUH4...JYZ4
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 3
+
+----------------------------------------------------------------------------------------
+Please enter the app ID of the compound contract you are trying to connect to: 157582655
+Welcome LUH4...JYZ4!
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 727153 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563798 [round]
+	Number of stakers: 3
+	Number of boxes: 3
+
+	Next scheduled compounding can be trigger at round: 27563901
+
+	Error: account application info not found
+	If you are a new user, please opt in!
+	Error: account asset info not found
+	Are you opted-in the staking asset?
+
+Your options are:
+For basic users:
+	0) Opt-in to contract
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 4
+
+----------------------------------------------------------------------------------------
+	Compounding is not scheduled for the current round.
+	Next scheduled trigger at round: 27563901
+	Tip: you can add funds to trigger the contract now.
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 727153 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563798 [round]
+	Number of stakers: 3
+	Number of boxes: 3
+
+	Next scheduled compounding can be trigger at round: 27563901
+
+	Error: account application info not found
+	If you are a new user, please opt in!
+	Error: account asset info not found
+	Are you opted-in the staking asset?
+
+Your options are:
+For basic users:
+	0) Opt-in to contract
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 4
+
+----------------------------------------------------------------------------------------
+	Compounding is not scheduled for the current round.
+	Next scheduled trigger at round: 27563901
+	Tip: you can add funds to trigger the contract now.
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 727153 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563798 [round]
+	Number of stakers: 3
+	Number of boxes: 3
+
+	Next scheduled compounding can be trigger at round: 27563901
+
+	Error: account application info not found
+	If you are a new user, please opt in!
+	Error: account asset info not found
+	Are you opted-in the staking asset?
+
+Your options are:
+For basic users:
+	0) Opt-in to contract
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 4
+
+----------------------------------------------------------------------------------------
+	Compounding is not scheduled for the current round.
+	Next scheduled trigger at round: 27563901
+	Tip: you can add funds to trigger the contract now.
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 727153 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563798 [round]
+	Number of stakers: 3
+	Number of boxes: 3
+
+	Next scheduled compounding can be trigger at round: 27563901
+
+	Error: account application info not found
+	If you are a new user, please opt in!
+	Error: account asset info not found
+	Are you opted-in the staking asset?
+
+Your options are:
+For basic users:
+	0) Opt-in to contract
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 4
+
+----------------------------------------------------------------------------------------
+	Tx ID: J5S6XYSZFU3MHJFH2O2BNSIZCR77SFE7V3COXAWL4PR47V7R5EGQ
+
+Successfully compounded stake!
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 753613 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563906 [round]
+	Number of stakers: 3
+	Number of boxes: 4
+
+	Next scheduled compounding can be trigger at round: 27564007
+
+	Error: account application info not found
+	If you are a new user, please opt in!
+	Error: account asset info not found
+	Are you opted-in the staking asset?
+
+Your options are:
+For basic users:
+	0) Opt-in to contract
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 5
+
+----------------------------------------------------------------------------------------
+	Tx ID: LIQ52RVN3DQVIBW5LJOZ2RMDNFWQOANUHYQF4AQAG5OS5U3JDEBQ
+	Tx ID: 36XCAJHXTBK3SYZIHLWJBSEVVUWTDMVUQXVHB4SX4J2OKANFZQWQ
+
+Successfully compounded the stake!
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 755083 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27563912 [round]
+	Number of stakers: 3
+	Number of boxes: 5
+
+	Next scheduled compounding can be trigger at round: 27564011
+
+	Error: account application info not found
+	If you are a new user, please opt in!
+	Error: account asset info not found
+	Are you opted-in the staking asset?
+
+Your options are:
+For basic users:
+	0) Opt-in to contract
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 4
+
+----------------------------------------------------------------------------------------
+	Tx ID: Z5C75DRHFHJ5CTF7Y3PEACFXGNS52VI6JQREIL4GKQEYU2OEFF7Q
+
+Successfully compounded stake!
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 802857 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27564107 [round]
+	Number of stakers: 3
+	Number of boxes: 6
+
+	Next scheduled compounding can be trigger at round: 27564159
+
+	Error: account application info not found
+	If you are a new user, please opt in!
+	Error: account asset info not found
+	Are you opted-in the staking asset?
+
+Your options are:
+For basic users:
+	0) Opt-in to contract
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 10
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 1
+
+----------------------------------------------------------------------------------------
+Please enter path to .txt file with your wallet's mnemonic. (THIS IS FOR TEST PURPOSES ONLY!): b.txt
+Welcome user: TF2R...HORE
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 3
+
+----------------------------------------------------------------------------------------
+Please enter the app ID of the compound contract you are trying to connect to: However, because the rewards since the last compounding were below the minimal limit for zapping, they are not yet 
+reinvested.You did not enter a valid number!
+Please enter the app ID of the compound contract you are trying to connect to: 157582655
+You did not enter a valid number!
+Please enter the app ID of the compound contract you are trying to connect to: 3
+	Error: application does not exist
+Please enter the app ID of the compound contract you are trying to connect to: 157582655
+Welcome TF2R...HORE!
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 802857 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 0
+	Last compound round: 27564107 [round]
+	Number of stakers: 3
+	Number of boxes: 6
+
+	Compounding can be triggered!
+
+
+You have 111357 [base unit] of ASA ID '148620458' in the contract
+	**For advance users:** You have 3 results to claim
+
+You are holding 437415 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 2
+
+----------------------------------------------------------------------------------------
+Please enter the amount [base unit] you would like to withdraw from the compound contract: 111357
+	Claiming rewards before withdrawing can be done ...
+	Tx ID: OUBHJ3SKQL7CJP657APSSVCIM4FI4JSORH2F3U5XAEEI7Z7K7QOQ
+	Finished claiming rewards.
+	Withdrawing requested amount...
+	Tx ID: XZFM6UZVH3YC34H5IPQFIDP2WUDIZJPGTXFS5G5JLDBGSL3EMRBQ
+	Tx ID: E2PFXZ754CQ5DXTFXUGTATSUC3WQUXOYUGZFQRO5GBCXFGKIABNQ
+	Return value: 114891
+
+Successfully withdrawn 114891
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 713445 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 1
+	Last compound round: 27564227 [round]
+	Number of stakers: 3
+	Number of boxes: 7
+
+
+You have 0 [base unit] of ASA ID '148620458' in the contract
+
+You are holding 552306 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 3
+
+----------------------------------------------------------------------------------------
+	Tx ID: SM3RVWD2YEPQAPNZLEEILZEZJJFRGCGTUOZNYQ3SLR5E3KF7GJGQ
+
+Successfully opted out of app ID: 157582655
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 713445 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 1
+	Last compound round: 27564227 [round]
+	Number of stakers: 2
+	Number of boxes: 7
+
+	Error: account application info not found
+	If you are a new user, please opt in!
+
+You are holding 552306 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	0) Opt-in to contract
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 10
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 1
+
+----------------------------------------------------------------------------------------
+Please enter path to .txt file with your wallet's mnemonic. (THIS IS FOR TEST PURPOSES ONLY!): c.txt
+Welcome user: V4UX...VO5E
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 3
+
+----------------------------------------------------------------------------------------
+Please enter the app ID of the compound contract you are trying to connect to: 157582655
+Welcome V4UX...VO5E!
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 713445 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 1
+	Last compound round: 27564227 [round]
+	Number of stakers: 2
+	Number of boxes: 7
+
+
+You have 132874 [base unit] of ASA ID '148620458' in the contract
+	**For advance users:** You have 5 results to claim
+
+You are holding 5246908 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 2
+
+----------------------------------------------------------------------------------------
+Please enter the amount [base unit] you would like to withdraw from the compound contract: 132874
+	Claiming rewards before withdrawing can be done ...
+	Tx ID: 4XVWAP5G2Q33YJZPL5OSEGD65UOXCTAMCHCKMGHZBZEVXQ75KBGQ
+	Finished claiming rewards.
+	Withdrawing requested amount...
+	Tx ID: 5LF6QSHNNB2CSB52SRAGQZ5AALIRM64UUYS3TP23BMZ4PQCHK3DA
+	Tx ID: HHQ73F7BWOK27A52TVXR3WFYUGH5S6YZ6BLQ63UVNVECZS2JAAQA
+	Return value: 132874
+
+Successfully withdrawn 132874
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 580571 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 1
+	Last compound round: 27564227 [round]
+	Number of stakers: 2
+	Number of boxes: 7
+
+
+You have 0 [base unit] of ASA ID '148620458' in the contract
+
+You are holding 5379782 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 3
+
+----------------------------------------------------------------------------------------
+	Tx ID: JEAVL4DMNHXBKGNFZZNVP6V4KDZ2PYZNCQEQDCHMC7UMKJXY6WEA
+
+Successfully opted out of app ID: 157582655
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 580571 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 1
+	Last compound round: 27564227 [round]
+	Number of stakers: 1
+	Number of boxes: 7
+
+	Error: account application info not found
+	If you are a new user, please opt in!
+
+You are holding 5379782 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	0) Opt-in to contract
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 10
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 1
+
+----------------------------------------------------------------------------------------
+Please enter path to .txt file with your wallet's mnemonic. (THIS IS FOR TEST PURPOSES ONLY!): a.txt
+Welcome user: P4B2...WA3M
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 3
+
+----------------------------------------------------------------------------------------
+Please enter the app ID of the compound contract you are trying to connect to: 157582655
+Welcome P4B2...WA3M, compound contract creator!
+
+----------------------------------------------------------------------------------------
+You are managing contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 580571 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 1
+	Last compound round: 27564227 [round]
+	Number of stakers: 1
+	Number of boxes: 7
+
+Your options are:
+	1) Setup contract
+	2) Delete contract
+	3) Delete contract boxes
+	4) Interact as user
+	5) Read all compounding increments
+	6) Go to the top menu
+Please enter number of the option you would like to choose: 4
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 580571 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 1
+	Last compound round: 27564227 [round]
+	Number of stakers: 1
+	Number of boxes: 7
+
+
+You have 580570 [base unit] of ASA ID '148620458' in the contract
+	**For advance users:** You have 7 results to claim
+
+You are holding 1405593 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 2
+
+----------------------------------------------------------------------------------------
+Please enter the amount [base unit] you would like to withdraw from the compound contract: 580570
+	Claiming rewards before withdrawing can be done ...
+	Tx ID: NRHMTE7FFYK3DWK3NNCPQDIEPI7Y4L3IDUFOC37ID4K7LJOT6UTA
+	Finished claiming rewards.
+	Withdrawing requested amount...
+	Tx ID: XEWALE3LYMQ6XYGE7HNRFLOLZCQF6AKOAGF6YLD3JAXVAUAUM4HQ
+	Tx ID: KZZFEXCXK4QDIDZXL3EXOWR7WEQXIMWM2L7APC364LV4XZ6ZRPLA
+	Return value: 580570
+
+Successfully withdrawn 580570
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 1 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 1
+	Last compound round: 27564227 [round]
+	Number of stakers: 1
+	Number of boxes: 7
+
+
+You have 0 [base unit] of ASA ID '148620458' in the contract
+
+You are holding 1986163 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 3
+
+----------------------------------------------------------------------------------------
+	Tx ID: DARIHPMLULQDFA26HF72JYTQOGNP6SLUEHOCM6Q43UIHKNTEUF2A
+
+Successfully opted out of app ID: 157582655
+
+----------------------------------------------------------------------------------------
+You are interacting with contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 1 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 1
+	Last compound round: 27564227 [round]
+	Number of stakers: 0
+	Number of boxes: 7
+
+	If you are a new user, please opt in!
+
+You are holding 1986163 [base unit] of staking asset
+
+Your options are:
+For basic users:
+	0) Opt-in to contract
+	1) Stake
+	2) Withdraw
+	3) Opt-out of contract
+For advance users:
+	4) Trigger compounding
+	5) Compound now - even if not scheduled
+	6) Schedule additional optimal compounding
+	7) Locally accumulate
+	8) Clear your contract state
+	9) Read all compounding increments
+	10) Go to the top menu
+Please enter number of the option you would like to choose: 10
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 3
+
+----------------------------------------------------------------------------------------
+Please enter the app ID of the compound contract you are trying to connect to: 157582655
+Welcome P4B2...WA3M, compound contract creator!
+
+----------------------------------------------------------------------------------------
+You are managing contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 1 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 1
+	Last compound round: 27564227 [round]
+	Number of stakers: 0
+	Number of boxes: 7
+
+Your options are:
+	1) Setup contract
+	2) Delete contract
+	3) Delete contract boxes
+	4) Interact as user
+	5) Read all compounding increments
+	6) Go to the top menu
+Please enter number of the option you would like to choose: 5
+
+----------------------------------------------------------------------------------------
+
+Increments from compoundings:
+	Box number 0001: b64='AQELfwDYtKkx' = 1.004081666666666666656946433000
+	Box number 0002: b64='AQGyA92AjspL' = 1.006622544839554188225282799000
+	Box number 0003: b64='AQIr45VAOYR6' = 1.008482192934229422173232626000
+	Box number 0004: b64='AQlQwZB0wPF4' = 1.036388490455241194031915652000
+	Box number 0005: b64='AQB/1bFaozjq' = 1.001950603293732990268539995000
+	Box number 0006: b64='ARAydDP9jKjP' = 1.063269865696883653813278187000
+	Box number 0007: b64='AQgfz+keVwgr' = 1.031735414899540017707579159000
+
+----------------------------------------------------------------------------------------
+You are managing contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 1 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 1
+	Last compound round: 27564227 [round]
+	Number of stakers: 0
+	Number of boxes: 7
+
+Your options are:
+	1) Setup contract
+	2) Delete contract
+	3) Delete contract boxes
+	4) Interact as user
+	5) Read all compounding increments
+	6) Go to the top menu
+Please enter number of the option you would like to choose: 3
+
+----------------------------------------------------------------------------------------
+	Tx ID: VD5QTW3QC77CBLSW23IW5TIOZAMF7UXGWVXATPOYCP6BCNRRSGBQ
+
+Successfully deleted all boxes of app ID: 157582655
+
+----------------------------------------------------------------------------------------
+You are managing contract with ID 157582655 and following parameters:
+	Connected to staking contract ID: 157582406
+	Connected to associated contract ID: 157582429
+	Staking ASA ID: 148620458
+	Reward ASA ID: 10458941
+	Connected AMM contract ID: 148607000
+	Connected AMM pool address: UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y
+	Minimum amount of reward ASA ID before they are added to the farming pool: 10000 [base unit]
+	Total stake: 1 [base unit]
+	Pool start round: 27563744 [round]
+	Pool end round: 27564211 [round]
+	Claiming period: 100 [rounds]
+	Last compound done: 1
+	Last compound round: 27564227 [round]
+	Number of stakers: 0
+	Number of boxes: 0
+
+Your options are:
+	1) Setup contract
+	2) Delete contract
+	3) Delete contract boxes
+	4) Interact as user
+	5) Read all compounding increments
+	6) Go to the top menu
+Please enter number of the option you would like to choose: 2
+
+----------------------------------------------------------------------------------------
+	Tx ID: ALYBW67R4CNGZD2VJ2VRTW7ZZG2G4PNTEXXUGMRFFOYGCS44E5XQ
+
+Successfully deleted contract with app ID: 157582655
+
+----------------------------------------------------------------------------------------
+You are managing contract with ID 157582655 and following parameters:
+	Error: application does not exist
+
+----------------------------------------------------------------------------------------
+Your options are:
+	1) Switch user
+	2) Deploy new compounding contract
+	3) Connect to existing compounding contract
+	4) Exit
+Please enter number of the option you would like to choose: 4
+
+Process finished with exit code 1

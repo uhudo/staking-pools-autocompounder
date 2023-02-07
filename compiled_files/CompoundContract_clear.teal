@@ -1,0 +1,15 @@
+#pragma version 8
+txn NumAppArgs
+int 0
+==
+bnz main_l2
+err
+main_l2:
+byte "NS"
+byte "NS"
+app_global_get
+int 1
+-
+app_global_put
+int 1
+return
